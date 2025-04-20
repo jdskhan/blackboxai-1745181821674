@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>USDT Trading & TDS Management System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen p-6">
+  <header class="flex justify-between items-center mb-6">
+    <h1 class="text-3xl font-bold text-gray-800">CryptoTDS - USDT Trading & TDS Management System</h1>
+    <button class="text-red-600 hover:text-red-800 font-semibold">Logout</button>
+  </header>
+
+  <section class="mb-8">
+    <div class="flex items-center space-x-4">
+      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User profile" class="w-16 h-16 rounded-full" />
+      <div>
+        <p class="text-lg font-semibold text-gray-700">Admin User</p>
+        <p class="text-sm text-gray-500">Last Updated: April 20, 2025 20:21</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-xl font-semibold mb-2">USDT Balance</h2>
+      <p class="text-3xl font-bold text-gray-900">1689.42</p>
+      <p class="text-green-600">4.2% from last week</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-xl font-semibold mb-2">INR Balance</h2>
+      <p class="text-3xl font-bold text-gray-900">₹ 12,41,436</p>
+      <p class="text-green-600">2.8% from last week</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-xl font-semibold mb-2">TDS Collected (1%)</h2>
+      <p class="text-3xl font-bold text-gray-900">₹ 11,742.28</p>
+      <p class="text-green-600">10.3% from last month</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-xl font-semibold mb-2">Avg. Buy Rate</h2>
+      <p class="text-3xl font-bold text-gray-900">₹ 0.00</p>
+      <p class="text-gray-500">Current Market: ₹ 87.21</p>
+    </div>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold mb-4">Recent Transactions</h2>
+    <div class="overflow-x-auto bg-white rounded-lg shadow">
+      <table class="min-w-full divide-y divide-gray-200">
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Date</th>
+            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Type</th>
+            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Vendor/Client</th>
+            <th class="px-4 py-2 text-right text-xs font-medium text-gray-500 uppercase">USDT</th>
+            <th class="px-4 py-2 text-right text-xs font-medium text-gray-500 uppercase">Rate</th>
+            <th class="px-4 py-2 text-right text-xs font-medium text-gray-500 uppercase">Amount</th>
+            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-200">
+          <tr>
+            <td class="px-4 py-2 whitespace-nowrap">19 Apr 2025</td>
+            <td class="px-4 py-2 whitespace-nowrap">Sell</td>
+            <td class="px-4 py-2 whitespace-nowrap">Unknown</td>
+            <td class="px-4 py-2 whitespace-nowrap text-right">2900.00</td>
+            <td class="px-4 py-2 whitespace-nowrap text-right">₹ 92.00</td>
+            <td class="px-4 py-2 whitespace-nowrap text-right">₹ 266,800.00</td>
+            <td class="px-4 py-2 whitespace-nowrap">Completed</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 whitespace-nowrap">19 Apr 2025</td>
+            <td class="px-4 py-2 whitespace-nowrap">Sell</td>
+            <td class="px-4 py-2 whitespace-nowrap">Unknown</td>
+            <td class="px-4 py-2 whitespace-nowrap text-right">9000.00</td>
+            <td class="px-4 py-2 whitespace-nowrap text-right">₹ 92.45</td>
+            <td class="px-4 py-2 whitespace-nowrap text-right">₹ 832,050.00</td>
+            <td class="px-4 py-2 whitespace-nowrap">Completed</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 whitespace-nowrap">19 Apr 2025</td>
+            <td class="px-4 py-2 whitespace-nowrap">Buy</td>
+            <td class="px-4 py-2 whitespace-nowrap">-</td>
+            <td class="px-4 py-2 whitespace-nowrap text-right">12,331.00</td>
+            <td class="px-4 py-2 whitespace-nowrap text-right">₹ 90.00</td>
+            <td class="px-4 py-2 whitespace-nowrap text-right">₹ 1,109,790.00</td>
+            <td class="px-4 py-2 whitespace-nowrap">Pending</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 whitespace-nowrap">18 Apr 2025</td>
+            <td class="px-4 py-2 whitespace-nowrap">Buy</td>
+            <td class="px-4 py-2 whitespace-nowrap">Unknown</td>
+            <td class="px-4 py-2 whitespace-nowrap text-right">250.00</td>
+            <td class="px-4 py-2 whitespace-nowrap text-right">₹ 86.25</td>
+            <td class="px-4 py-2 whitespace-nowrap text-right">₹ 21,562.50</td>
+            <td class="px-4 py-2 whitespace-nowrap">Completed</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 whitespace-nowrap">17 Apr 2025</td>
+            <td class="px-4 py-2 whitespace-nowrap">Sell</td>
+            <td class="px-4 py-2 whitespace-nowrap">Unknown</td>
+            <td class="px-4 py-2 whitespace-nowrap text-right">100.00</td>
+            <td class="px-4 py-2 whitespace-nowrap text-right">₹ 87.50</td>
+            <td class="px-4 py-2 whitespace-nowrap text-right">₹ 8,750.00</td>
+            <td class="px-4 py-2 whitespace-nowrap">Completed</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold mb-4">Bank Accounts</h2>
+    <div class="overflow-x-auto bg-white rounded-lg shadow">
+      <table class="min-w-full divide-y divide-gray-200">
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Bank Name</th>
+            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Account No.</th>
+            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">IFSC</th>
+            <th class="px-4 py-2 text-right text-xs font-medium text-gray-500 uppercase">Current Balance</th>
+            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Last Updated</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-200">
+          <tr>
+            <td class="px-4 py-2 whitespace-nowrap">HDFC</td>
+            <td class="px-4 py-2 whitespace-nowrap">XXXX XXXX 1234</td>
+            <td class="px-4 py-2 whitespace-nowrap">HDFC0000123</td>
+            <td class="px-4 py-2 whitespace-nowrap text-right">₹ 1,200,000</td>
+            <td class="px-4 py-2 whitespace-nowrap">2025-04-19</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 whitespace-nowrap">SBI</td>
+            <td class="px-4 py-2 whitespace-nowrap">XXXX XXXX 5678</td>
+            <td class="px-4 py-2 whitespace-nowrap">SBIN0000456</td>
+            <td class="px-4 py-2 whitespace-nowrap text-right">₹ 500,000</td>
+            <td class="px-4 py-2 whitespace-nowrap">2025-04-18</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold mb-4">Top Vendors</h2>
+    <div class="overflow-x-auto bg-white rounded-lg shadow">
+      <table class="min-w-full divide-y divide-gray-200">
+        <thead class="bg-gray-100">
+          <tr>
+            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Vendor</th>
+            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Total Volume (USDT)</th>
+            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Type</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-200">
+          <tr>
+            <td class="px-4 py-2 whitespace-nowrap">Priya Sharma</td>
+            <td class="px-4 py-2 whitespace-nowrap">9750.00</td>
+            <td class="px-4 py-2 whitespace-nowrap">Seller</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 whitespace-nowrap">TetherExchange</td>
+            <td class="px-4 py-2 whitespace-nowrap">3350.00</td>
+            <td class="px-4 py-2 whitespace-nowrap">Buyer</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 whitespace-nowrap">CryptoMaster Ltd</td>
+            <td class="px-4 py-2 whitespace-nowrap">1250.00</td>
+            <td class="px-4 py-2 whitespace-nowrap">Buyer</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 whitespace-nowrap">Global USDT</td>
+            <td class="px-4 py-2 whitespace-nowrap">950.00</td>
+            <td class="px-4 py-2 whitespace-nowrap">Buyer</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 whitespace-nowrap">Rahul Mehta</td>
+            <td class="px-4 py-2 whitespace-nowrap">500.00</td>
+            <td class="px-4 py-2 whitespace-nowrap">Both</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold mb-4">Monthly TDS Summary</h2>
+    <div class="bg-white p-6 rounded-lg shadow">
+      <p class="text-lg font-semibold">TDS collected at 1% on buy transactions</p>
+      <div class="grid grid-cols-3 gap-6 mt-4">
+        <div class="bg-gray-100 p-4 rounded">
+          <p class="text-sm text-gray-600">This Month</p>
+          <p class="text-2xl font-bold">₹ 2,145</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded">
+          <p class="text-sm text-gray-600">Last Month</p>
+          <p class="text-2xl font-bold">₹ 1,956</p>
+        </div>
+        <div class="bg-gray-100 p-4 rounded">
+          <p class="text-sm text-gray-600">YTD Total</p>
+          <p class="text-2xl font-bold">₹ 12,487</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center text-gray-500 text-sm mt-12">
+    <p>This is a temporary preview. Deploy your app before sharing to keep it live.</p>
+  </footer>
+</body>
+</html>
